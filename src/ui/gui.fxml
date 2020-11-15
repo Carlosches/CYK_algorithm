@@ -65,13 +65,13 @@
                               </VBox>
                               <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
                                  <children>
-                                    <Label stylesheets="@../resources/dark-theme.css" text="text W" />
+                                    <Label stylesheets="@../resources/dark-theme.css" text="String W" />
                                     <TextField fx:id="textW" alignment="TOP_CENTER" stylesheets="@../resources/dark-theme.css" />
                                  </children>
                               </VBox>
                               <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <children>
-                                    <Label stylesheets="@../resources/dark-theme.css" text="initial variable" />
+                                    <Label stylesheets="@../resources/dark-theme.css" text="Initial variable" />
                                     <TextField fx:id="initialVariable" stylesheets="@../resources/dark-theme.css" />
                                  </children>
                               </VBox>
@@ -91,7 +91,7 @@
                               </AnchorPane>
                            </children>
                         </GridPane>
-                        <Button mnemonicParsing="false" onAction="#check" prefHeight="39.0" prefWidth="255.0" stylesheets="@../resources/dark-theme.css" text="check if W belongs to grmmar G" />
+                        <Button mnemonicParsing="false" onAction="#check" prefHeight="39.0" prefWidth="266.0" stylesheets="@../resources/dark-theme.css" text="check if W belongs to grammar G" />
                      </children>
                   </VBox>
                </children>
