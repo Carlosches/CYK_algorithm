@@ -44,7 +44,6 @@ public class CYK {
 				for(String e: set) {
 					dp[i][j]+=e+",";
 				}
-				System.out.println("i: "+ i +" j: " + j + " " +dp[i][j]);
 			}
 		}
 	}
@@ -68,14 +67,20 @@ public class CYK {
 	}
 	
 	public boolean check(Grammar gram) {
-		String[] spl = dp[0][dp.length-1].split(",");
-		boolean ans=false;
-		for (int i = 0; i < spl.length && !ans; i++) {
-			if(spl[i].equals(gram.getInitial_variable())) {
-				ans=true;
+		try {
+			String[] spl = dp[0][dp.length-1].split(",");
+			boolean ans=false;
+			for (int i = 0; i < spl.length && !ans; i++) {
+				if(spl[i].equals(gram.getInitial_variable())) {
+					ans=true;
+				}
+				
 			}
-			
+
+			return ans;
+		}catch(NullPointerException e) {
+			return false;
 		}
-		return ans;
+		
 	}
 }
